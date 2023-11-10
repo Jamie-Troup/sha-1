@@ -10,7 +10,7 @@ int main() {
 	uint64_t size = 1, len = 0;
 
 	while ((ch = getchar()) != EOF && ch != '\n') {
-		tempStr = realloc(input, size++ * 8);
+		tempStr = realloc(input, ++size * 8);
 		if (tempStr) {
 			input = tempStr;
 		}
